@@ -1,43 +1,45 @@
-/* Minimal, clean, dark-first theme with light support */
-:root{
-  --bg:#0f1115; --text:#e5e7eb; --muted:#94a3b8; --card:#131621; --border:#23283b;
-  --accent:#60a5fa; --focus:#7dd3fc; --btn:#1f2433; --btn-hover:#252b3d;
-}
-:root.light{
-  --bg:#f7f8fb; --text:#0f172a; --muted:#475569; --card:#ffffff; --border:#e5e7eb;
-  --accent:#2563eb; --focus:#0ea5e9; --btn:#eff3ff; --btn-hover:#e7ecff;
-}
+/* Namespaced styles to avoid conflicts */
+.site{background:var(--bg); color:var(--text);}
+:root{ --bg:#0f1115; --text:#e5e7eb; --muted:#94a3b8; --card:#131621; --border:#23283b; --accent:#60a5fa; --focus:#7dd3fc; --btn:#1f2433; --btn-hover:#252b3d; }
+:root.light{ --bg:#f7f8fb; --text:#0f172a; --muted:#475569; --card:#ffffff; --border:#e5e7eb; --accent:#2563eb; --focus:#0ea5e9; --btn:#eff3ff; --btn-hover:#e7ecff; }
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu; background:var(--bg); color:var(--text);}
 a{color:var(--text)}
 img{max-width:100%; display:block}
 .container{max-width:1100px; margin:auto; padding:24px}
+
 .header{padding-top:12px}
-.nav{display:flex; align-items:center; justify-content:space-between; gap:12px}
+.nav{display:flex; align-items:center; gap:16px}
 .brand{font-weight:800; letter-spacing:.5px; text-decoration:none}
-.links{display:flex; gap:14px; align-items:center}
+.links{display:flex; gap:14px; align-items:center; margin-left:auto}
 .btn{display:inline-block; padding:10px 14px; background:var(--btn); border:1px solid var(--border); border-radius:12px; text-decoration:none; transition:.15s}
 .btn:hover{background:var(--btn-hover)}
 .btn.outline{background:transparent}
+.toggle{border:1px solid var(--border); background:var(--btn); border-radius:10px; padding:8px 10px; cursor:pointer}
+
 .hero{padding:40px 0 12px}
 .hero h1{font-size:clamp(1.6rem,3vw,2.25rem); margin:.2em 0}
 .hero p{color:var(--muted); margin:0 0 12px}
 .actions{display:flex; gap:10px; flex-wrap:wrap}
+
 .grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .card{background:var(--card); border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 6px 16px rgba(0,0,0,.18)}
 .card-body{padding:16px}
 .badges{display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:8px 0}
 .badges li{font-size:.8rem; background:#1e293b; padding:6px 10px; border-radius:999px}
+
 .footer{margin-top:24px; border-top:1px solid var(--border)}
 .footer p{margin:14px 0}
 .skip{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden}
 .skip:focus{left:12px; top:12px; width:auto; height:auto; background:var(--card); padding:8px 12px; border-radius:8px; outline:3px solid var(--focus)}
 :focus{outline:3px solid var(--focus); outline-offset:2px}
-.toggle{border:1px solid var(--border); background:var(--btn); border-radius:10px; padding:8px 10px; cursor:pointer}
+
 .muted{color:var(--muted); font-size:.95rem}
 .contact .form{margin-top:16px; display:grid; gap:12px; max-width:680px}
 label{display:grid; gap:8px}
 input, textarea{padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:var(--card); color:var(--text)}
 input:focus, textarea:focus{outline:3px solid var(--focus)}
+
 .highlights .card h3{font-size:1.6rem; margin:.4em 0 .1em}

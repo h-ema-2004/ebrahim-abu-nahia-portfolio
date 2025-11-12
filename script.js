@@ -1,5 +1,5 @@
 // Theme toggle + utilities + email copy + year auto
-(function(){ 
+(function(){
   const toggle = document.getElementById('theme-toggle');
   const lsKey = 'theme';
   function applyTheme(t){ document.documentElement.classList.toggle('light', t==='light'); }
@@ -15,7 +15,7 @@ function copyEmail(){
   const e = "youremail@example.com";
   navigator.clipboard.writeText(e).then(()=>{
     const btn = document.getElementById("copy-email");
-    if(btn) {
+    if(btn){
       const old = btn.textContent;
       btn.textContent = "Copied!";
       setTimeout(()=> btn.textContent = old, 1200);
@@ -23,7 +23,7 @@ function copyEmail(){
   });
 }
 
-document.addEventListener('DOMContentLoaded', function(){ 
-  var y = document.getElementById('y'); 
-  if(y) y.textContent = new Date().getFullYear(); 
+document.addEventListener('DOMContentLoaded', function(){
+  var y = document.getElementById('y');
+  if(y) y.textContent = new Date().getFullYear();
 });
