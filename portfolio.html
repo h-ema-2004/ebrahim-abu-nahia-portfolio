@@ -1,97 +1,117 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ebrahim Hamdi Abu Nahia — Portfolio</title>
+  <title>Ebrahim AbuNahia — Selected Projects</title>
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-
-  <!-- meta added by assistant -->
-  <meta name="description" content="Projects portfolio: E-Commerce Landing, To-Do App with LocalStorage, and Pomodoro Timer (HTML, CSS, JS).">
-  <link rel="canonical" href="https://h-ema-2004.github.io/ebrahim-abu-nahia-portfolio/portfolio.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Ebrahim Hamdi Abu Nahia — Portfolio">
-  <meta property="og:description" content="Projects portfolio: E-Commerce Landing, To-Do App with LocalStorage, and Pomodoro Timer (HTML, CSS, JS).">
-  <meta property="og:url" content="https://h-ema-2004.github.io/ebrahim-abu-nahia-portfolio/portfolio.html">
-  <meta property="og:image" content="https://h-ema-2004.github.io/ebrahim-abu-nahia-portfolio/images/proj1.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ebrahim Hamdi Abu Nahia — Portfolio">
-  <meta name="twitter:description" content="Projects portfolio: E-Commerce Landing, To-Do App with LocalStorage, and Pomodoro Timer (HTML, CSS, JS).">
-  <meta name="twitter:image" content="https://h-ema-2004.github.io/ebrahim-abu-nahia-portfolio/images/proj1.png">
-  <style data-added="a11y">:root{scroll-behavior:smooth}
-  .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-  .skip-link:focus{left:16px;top:16px;width:auto;height:auto;z-index:1000;background:#fff;color:#111;padding:8px 12px;border-radius:8px}
-  :focus-visible{outline:3px solid #38bdf8;outline-offset:2px}
-  </style>
-    
+  <meta name="description" content="Selected software projects by Ebrahim AbuNahia, including mobile platforms, booking systems, and business software.">
+  <link rel="canonical" href="https://ebrahim-abunahia-portfolio.vercel.app/portfolio.html">
 </head>
-
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html">Ebrahim Hamdi Abu Nahia</a>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Ebrahim AbuNahia</a>
     <nav aria-label="Primary navigation" class="nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="blog.html">Blog</a>
-      <a href="cv.pdf" class="btn ghost" download>Download CV</a>
+      <a href="portfolio.html">Projects</a>
+      <a href="cv.pdf" class="btn ghost" download>CV</a>
       <a href="contact.html" class="btn">Contact</a>
     </nav>
   </div>
 </header>
 
-<main id="main" class="container">
-  <h1>Portfolio</h1>
-  <section class="grid-3">
-    <article class="card">
-      <img src="images/proj1.png" alt="E-Commerce Landing preview" / loading="lazy">
-      <div class="card-body">
-        <h3>E-Commerce Landing Page</h3>
-        <p>Responsive landing page with features, pricing, testimonials, and CTA.</p>
-        <p class="tags">HTML, CSS, Vanilla JS</p>
-        <p>
-          <a href="projects/landing/index.html" target="_blank">Live Demo</a> ·
-          <a href="#" target="_blank" title="Replace with repo link after upload">Source</a>
-        </p>
+<main id="main" class="container section">
+  <div class="section-heading">
+    <p class="eyebrow">Selected work</p>
+    <h1>Projects built around real workflows.</h1>
+    <p>Some repositories are private because they contain active product or client work. The descriptions below focus on the engineering problems and systems I am building.</p>
+  </div>
+
+  <section class="project-list">
+    <article class="project-card">
+      <div>
+        <span class="card-kicker">Mobile Platform</span>
+        <h2>Hannina — Wedding Hall Booking Platform</h2>
+        <p>A booking platform designed for wedding halls in Gaza, with customer, provider, and administrative workflows. The system focuses on calendar availability, temporary reservation holds, double-booking prevention, deposit-proof workflows, notifications, search, subscriptions, and operational dashboards.</p>
+      </div>
+      <div class="project-meta">
+        <strong>Stack</strong>
+        <span>Flutter · Firebase · Riverpod · GoRouter · GitHub Actions</span>
+        <strong>Focus</strong>
+        <span>Booking integrity · Realtime data · Product architecture</span>
+        <span class="private-badge">Private product repository</span>
       </div>
     </article>
-    <article class="card">
-      <img src="images/proj2.png" alt="To-Do App preview" / loading="lazy">
-      <div class="card-body">
-        <h3>To-Do (LocalStorage)</h3>
-        <p>Add/edit/delete tasks with persistent storage in the browser.</p>
-        <p class="tags">HTML, CSS, Vanilla JS</p>
-        <p>
-          <a href="projects/todo/index.html" target="_blank">Live Demo</a> ·
-          <a href="#" target="_blank" title="Replace with repo link after upload">Source</a>
-        </p>
+
+    <article class="project-card">
+      <div>
+        <span class="card-kicker">Business Software</span>
+        <h2>Moonvar POS — Desktop & Mobile Workflow</h2>
+        <p>A point-of-sale and business-management workflow spanning desktop and mobile. Work includes transaction records, business reporting, synchronized data, detailed exports, and practical Arabic user experiences for day-to-day operations.</p>
+      </div>
+      <div class="project-meta">
+        <strong>Focus</strong>
+        <span>Desktop + mobile · Reporting · Data workflows</span>
+        <strong>Engineering</strong>
+        <span>Application logic · Exports · Synchronization</span>
+        <span class="private-badge">Private repository</span>
       </div>
     </article>
-    <article class="card">
-      <img src="images/proj3.png" alt="Pomodoro Timer preview" / loading="lazy">
-      <div class="card-body">
-        <h3>Pomodoro Timer</h3>
-        <p>Simple 25/5 timer with pause/reset, progress bar, and auto cycle option.</p>
-        <p class="tags">HTML, CSS, Vanilla JS</p>
-        <p>
-          <a href="projects/pomodoro/index.html" target="_blank">Live Demo</a> ·
-          <a href="#" target="_blank" title="Replace with repo link after upload">Source</a>
-        </p>
+
+    <article class="project-card">
+      <div>
+        <span class="card-kicker">Mobile / Web Product</span>
+        <h2>Dental Clinic Booking System</h2>
+        <p>A clinic-booking product concept with patient booking, clinic-side scheduling, configurable services, receptionist workflows, reminders, appointment status, and a path toward web and mobile delivery.</p>
+      </div>
+      <div class="project-meta">
+        <strong>Stack direction</strong>
+        <span>Flutter · Firebase · Push notifications</span>
+        <strong>Focus</strong>
+        <span>Appointments · Clinic operations · UX</span>
+        <span class="private-badge">In development</span>
       </div>
     </article>
+
+    <article class="project-card">
+      <div>
+        <span class="card-kicker">Business Application</span>
+        <h2>Rizqa — Sales & Debt Management</h2>
+        <p>A business application focused on customer balances, item-level debt records, partial and full payments, account updates, and structured PDF/Excel reporting for real operational use.</p>
+      </div>
+      <div class="project-meta">
+        <strong>Focus</strong>
+        <span>Accounting workflows · Data integrity · Reporting</span>
+        <span class="private-badge">Private repository</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="section compact">
+    <div class="cta-panel">
+      <div>
+        <p class="eyebrow">Code & contact</p>
+        <h2>Want to see how I work?</h2>
+        <p>My public GitHub contains portfolio code, while active commercial and product repositories remain private.</p>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="https://github.com/h-ema-2004" target="_blank" rel="noopener">Open GitHub</a>
+        <a class="btn ghost" href="contact.html">Contact me</a>
+      </div>
+    </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; 2025 Ebrahim Hamdi Abu Nahia — Student ID: 120227044</p>
-    <p><a href="mailto:exsscorpion@gmail.com">exsscorpion@gmail.com</a> · 0567275386 · Khan Younis, Gaza</p>
+  <div class="container footer-inner">
+    <p>© 2026 Ebrahim AbuNahia</p>
+    <p><a href="mailto:exsscorpion@gmail.com">exsscorpion@gmail.com</a> · Gaza</p>
   </div>
 </footer>
 
