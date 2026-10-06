@@ -1,5 +1,7 @@
-# Personal Portfolio — Ebrahim Hamdi Abu Nahia (ID 120227044)
-Static portfolio (HTML+CSS+JS), responsive, with internal demos in `projects/`.
+# Ebrahim AbuNahia — Portfolio
 
-## Upload to GitHub
-Upload **the entire `120227044/` folder** (keep structure). Then enable **Settings → Pages → Deploy from a branch → main (root)**.
+Personal portfolio for Ebrahim AbuNahia, a Computer Systems Engineering student and software developer.
+
+Live site: https://ebrahim-abunahia-portfolio.vercel.app/
+
+The site is a static HTML/CSS/JS portfolio featuring current engineering focus, selected private product work, public GitHub links, and contact information.
