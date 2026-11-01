@@ -1,1 +1,5 @@
-(()=>{'use strict';const menu=document.getElementById('menuToggle'),nav=document.getElementById('primaryNav'),top=document.getElementById('toTop');if(menu&&nav){const close=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')};menu.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});document.addEventListener('click',e=>{if(!menu.contains(e.target)&&!nav.contains(e.target))close()});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));const current=location.pathname.split('/').pop()||'index.html';nav.querySelectorAll('a').forEach(a=>{if(a.getAttribute('href')===current)a.setAttribute('aria-current','page')})}if(top){const show=()=>top.classList.toggle('visible',scrollY>500);addEventListener('scroll',show,{passive:true});show();top.addEventListener('click',()=>scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}))}})();
+
+const btn = document.getElementById('toTop');
+if(btn){
+  btn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+}
